@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  background-color: rgb(25, 13, 68) !important;
+  padding-right: 5%;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+.navbar .nav-link {
+  margin-right: 20px;
+  font-size: 23px;
+}
+
+/* LOGIN PAGE STYLING */
+.pic {
+  background: url("../extra/blur_bg.jpeg") no-repeat center center fixed; /* ✅ your image path */
+  background-size: cover; /* makes it fit perfectly */
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #0a2479;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-login {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background-color: #0e3570;
+}
+
+.error {
+  color: red;
+  background: #ffe0e0;
+  border: 1px solid red;
+  padding: 28px;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+/*footer PAGE STYLING */
+.note {
+  color: grey;
+  font-size: small;
+}
+
+footer a {
+  color: rgb(201, 232, 235);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.start {
+  justify-content: center;
+  padding: 10px;
+  margin: 30px auto;
+  max-width: 200px;
+  text-align: center;
+  max-height: 70px;
+  background-color: rgb(167, 208, 243);
+  box-shadow: 0 5px 6px rgb(205, 127, 241);
+  border-radius: 28px;
+  margin-top: 60px;
+  font-size: 28px;
+  border: #f8f9fa;
+  border: solid white;
+}
+.start:hover {
+  transform: translateY(8px);
+  transition: 0.5sec ease;
+  background-color: rgb(63, 156, 238);
+}
+.navbar .container-fluid {
+  padding-left: 20px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+.choose {
+  color: white;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f1ad92;
+  border-radius: 10px;
+  box-shadow: 0 9px 15px rgba(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dashboard Title */
+.dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Add New Post Button */
+.btn-add {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #0056b3;
+}
+
+/* Posts Table */
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.posts-table th,
+.posts-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.posts-table th {
+  background-color: #f5f5f5;
+  color: #333333;
+  font-weight: 600;
+}
+
+.posts-table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Action Buttons */
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #28a745;
+}
+
+.btn-edit:hover {
+  background-color: #1e7e34;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .posts-table th,
+  .posts-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .dashboard-container h2 {
+    font-size: 24px;
+  }
+
+  .btn-add {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* add post */
+
+.addpost-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #9676a8;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.addpost-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #494848;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  background-color: #fff;
+  color: #333;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #0056b3;
+}
+
+/* Message boxes */
+.message {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.success {
+  background-color: #ccffcc !important;
+  color: #006600 !important;
+  border: 1px solid #006600;
+}
+
+.error {
+  background-color: #ffcccc !important;
+  color: #800000 !important;
+  border: 1px solid #800000;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.message {
+  animation: fadeout 5s forwards;
+}
